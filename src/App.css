@@ -1,0 +1,91 @@
+/* -- ESTILOS GLOBAIS (opcionais, mas boas práticas) -- */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  /* Centraliza o conteúdo verticalmente */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* ------------------ */
+/* -- JOGO DA VELHA -- */
+/* ------------------ */
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  gap: 40px;
+}
+
+.game-board {
+  border: 1px solid #999;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 200px;
+}
+
+.game-info ol {
+  padding-left: 20px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+.game-info button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.game-info button:hover {
+  background-color: #e0e0e0;
+}
+
+/* -- ESTILOS DO QUADRADO (SQUARE) -- */
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  cursor: pointer;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
