@@ -1,4 +1,3 @@
-/* -- ESTILOS GLOBAIS (opcionais, mas boas práticas) -- */
 
 body {
   font-family: sans-serif;
@@ -10,10 +9,6 @@ body {
   align-items: center;
   background-color: #f0f0f0;
 }
-
-/* ------------------ */
-/* -- JOGO DA VELHA -- */
-/* ------------------ */
 
 .game {
   display: flex;
